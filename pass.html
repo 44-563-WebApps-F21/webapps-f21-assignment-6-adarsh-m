@@ -20,6 +20,23 @@
                 alert("access denied");
             }
         }
+        let usingImage = 1;
+            function newImage() {
+                switch (usingImage) {
+                    case 1:
+                        document.getElementById("animals").src = "Urial.jpg"
+                        usingImage = usingImage++;
+                        break;
+                    case 2:
+                        document.getElementById("animals").src = "Monkey.jpg"
+                        usingImage = usingImage++;
+                        break;
+                    case 3:
+                        document.getElementById("animals").src = "Narwhal.jpg"
+                        usingImage = usingImage++;
+                        break;
+                }
+            }
     </script>
 </head>
 
@@ -36,6 +53,10 @@
     </form>
 
     <p id="result">Attempts display here </p>
+    <div class="container">
+        <img src="Narwhal.jpg" id="animals" alt="Narwhal" style="height: 200px;" width="200px;"
+            onclick="newImage(this)" />
+    </div>
 
 </body>
 
