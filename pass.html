@@ -18,6 +18,9 @@
                 wrong = wrong + 1;
                 document.getElementById("result").innerHTML = "Wrong count " + wrong;
                 alert("access denied");
+                if (wrong > 3) {
+                    alert("account locked");
+                }
             }
         }
         let usingImage = 1;
